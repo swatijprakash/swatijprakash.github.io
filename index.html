@@ -19,6 +19,11 @@
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
 
+   <style>
+	
+	</style>
+	
+
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
@@ -36,10 +41,10 @@
    ================================================== -->
    <header>   	
    	<div class="row">
-   		<div>
-   			<a class="menu-toggle" href="#" style="padding: 0; margin: 0;"><span>Menu</span></a>
+   		<!--<div class="header">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 		   	<nav>
-				<ul class="main-navigation" style="width: fit-content; background-color:black;">
+				<ul class="main-navigation" style="background-color:black;">
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 					<li><a class="smoothscroll"  href="#about" title="">About</a></li>
 					<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
@@ -47,8 +52,8 @@
 					<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>		
 				</ul>
 			</nav>    		
-   		</div> <!-- /top-bar --> 		
-   	</div> <!-- /row --> 		
+   		</div> 		
+   	</div>	-->	
    </header> <!-- /header -->
 
 	<!-- intro section
@@ -69,9 +74,15 @@
 	   				<span>Front-end Developement</span>
 	   				<span>Data Science Enthusiast</span> 
 	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
+				<div class="dropdown">
+				<button class="dropbtn">		More About Me		</button>
+					<div class="dropdown-content">
+						<a href="#about" ><b>About Me</b></a>
+						<a href="#resume" ><b>My Resume</b</a>
+						<a href="#services" ><b>Services</b></a>					
+						<a href="#contact" ><b>Contact Me</b></a>
+					</div>
+				</div>
 	   		</div>  
    			
    		</div>   		 		
