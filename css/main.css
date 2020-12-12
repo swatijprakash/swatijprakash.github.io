@@ -1515,6 +1515,47 @@ header .logo a {
 	padding-left: 13rem;
 }
 
+.dropbtn {
+	  color:white;
+	  background-color: transparent;
+	  font-size: 16px;
+	  border: 4px ridge white;
+	  cursor: pointer;
+	}
+	
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 245px;
+	  z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+	
+	.dropdown-content a:hover {
+		color:#ff0077;
+		background-color:transparent;}
+	
+	.dropdown:hover .dropdown-content { 
+	  display: block;
+	}
+	
+	.dropdown:hover .dropbtn {
+	  color:#ff0077;
+	  background-color:transparent;
+	}
+
 .about-content {
 	position: relative;
 	text-align: left;
