@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", "sans-serif";
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.font-normal {
+	font-weight: normal;
+}
+
+p {
+	font-family: "Montserrat";
+	text-align: justify;
+	line-height: 1.33;
+}
+
+ul {
+	margin-left: 10px;
+}
+
+li {
+	margin: 10px 0px;
+}

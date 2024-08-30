@@ -1,0 +1,8 @@
+.main-grid {
+	max-width: 900px;
+	margin: 100px auto 0;
+	padding: 0 10px 150px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: space-between;
+}
