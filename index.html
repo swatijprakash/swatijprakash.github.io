@@ -1,232 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <meta name="description" content="Swati Prakash — Consultant and Full Stack Engineer specializing in React, Angular, TypeScript, Node.js and NestJS." />
+  <title>Swati Prakash | Consultant · Full Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Swati Prakash home"><span class="brand-mark">S</span><span>Swati Prakash<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="nav-contact" href="#contact">Let's connect <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
-			rel="stylesheet"
-		/>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> CONSULTANT · FULL STACK ENGINEER</div>
+          <h1>Building thoughtful<br><span class="gradient-text">digital experiences.</span></h1>
+          <p class="hero-lead">I’m Swati — a Full Stack Engineer focused on creating scalable web applications, intuitive interfaces, and dependable backend services.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">Explore my work <span>↘</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+          <div class="hero-meta"><span>Based in India</span><span class="meta-divider"></span><span>5+ years in software development</span></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Abstract illustration representing software development">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="visual-glow"></div>
+          <div class="code-card">
+            <div class="code-top"><span></span><span></span><span></span><small>build.solutions()</small></div>
+            <div class="code-content">
+              <p><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
+              <p class="indent"><span class="code-cyan">focus</span>: <span class="code-green">'Full Stack'</span>,</p>
+              <p class="indent"><span class="code-cyan">frontend</span>: [<span class="code-green">'React'</span>, <span class="code-green">'Angular'</span>],</p>
+              <p class="indent"><span class="code-cyan">backend</span>: [<span class="code-green">'Node.js'</span>, <span class="code-green">'NestJS'</span>],</p>
+              <p class="indent"><span class="code-cyan">mindset</span>: <span class="code-green">'Always learning'</span></p>
+              <p>};</p><p class="code-comment">// turning ideas into impact ✦</p>
+            </div>
+          </div>
+          <div class="floating-chip chip-react"><span class="chip-icon">⚛</span> React.js</div>
+          <div class="floating-chip chip-ts"><span class="ts-icon">TS</span> TypeScript</div>
+          <div class="floating-chip chip-node"><span class="node-icon">N</span> Node.js</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><div class="scroll-line"></div><span class="hero-bottom-note">Curiosity → Craft → Impact</span></div>
+    </section>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <section class="section about-section" id="about">
+      <div class="container two-column">
+        <div class="section-intro reveal"><p class="section-kicker">01 / ABOUT</p><h2>Engineering with<br><span class="muted-heading">purpose and precision.</span></h2></div>
+        <div class="about-content reveal">
+          <p class="large-copy">I build reliable, maintainable applications that solve real business problems — from polished frontend experiences to robust APIs and cloud-connected services.</p>
+          <p>With 5+ years of experience across enterprise applications, I work with product and cross-functional teams to turn requirements into practical solutions. My experience spans application development, microservices, data integrations, reporting, and legacy modernization.</p>
+          <div class="stat-row"><div><strong>5+</strong><span>Years of experience</span></div><div><strong>Full stack</strong><span>Frontend to backend</span></div><div><strong>Cloud</strong><span>AWS · GCP</span></div></div>
+        </div>
+      </div>
+    </section>
 
-		<link rel="stylesheet" href="styles/theme.css" />
-		<link rel="stylesheet" href="styles/grid.css" />
-		<link rel="stylesheet" href="styles/typo.css" />
-		<link rel="stylesheet" href="styles/components.css" />
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-kicker">02 / EXPERIENCE</p><h2>Selected work &amp; projects</h2></div><p class="section-side-copy">A snapshot of the platforms and products I’ve helped build.</p></div>
+        <div class="experience-list">
+          <article class="project-card featured reveal">
+            <div class="project-number">01</div><div class="project-main"><div class="project-topline"><span class="project-label">FULL STACK · ENTERPRISE PLATFORM</span><span class="project-arrow">↗</span></div><h3>Metro Rail Operations Platform</h3><p>Developed operational dashboards, reporting experiences, analytics, and data-driven applications supporting passenger analytics, station operations, monitoring, and reporting.</p><ul><li>Built frontend features with React.js and Next.js.</li><li>Developed REST APIs and backend integrations using Node.js and NestJS.</li><li>Worked with BigQuery, AWS, and GCP for data and cloud-based solutions.</li></ul><div class="tag-list"><span>React.js</span><span>Next.js</span><span>NestJS</span><span>REST APIs</span><span>BigQuery</span><span>GCP</span></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">02</div><div class="project-main"><div class="project-topline"><span class="project-label">FULL STACK · MICROSERVICES</span><span class="project-arrow">↗</span></div><h3>Sales &amp; Field Operations</h3><p>Built a scalable sales application with reusable frontend components, service integrations, and end-to-end business workflows.</p><div class="tag-list"><span>React.js</span><span>Node.js</span><span>NestJS</span><span>Microservices</span></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">03</div><div class="project-main"><div class="project-topline"><span class="project-label">FRONTEND · ENTERPRISE APPLICATION</span><span class="project-arrow">↗</span></div><h3>Operator Management System</h3><p>Created responsive enterprise interfaces, API integrations, dynamic workflows, form validation, state management, and reusable UI components.</p><div class="tag-list"><span>React.js</span><span>TypeScript</span><span>JavaScript</span><span>API Integration</span></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">04</div><div class="project-main"><div class="project-topline"><span class="project-label">FULL STACK · BUSINESS WORKFLOWS</span><span class="project-arrow">↗</span></div><h3>Compliance Management</h3><p>Collaborated with global leads and the COO on a multi-domain compliance management application, including workflows, dashboards, documentation, and stakeholder-driven enhancements.</p><div class="tag-list"><span>Full Stack</span><span>Dashboards</span><span>Workflow Design</span><span>Documentation</span></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">05</div><div class="project-main"><div class="project-topline"><span class="project-label">FULL STACK · MODERNIZATION</span><span class="project-arrow">↗</span></div><h3>Legacy Modernization</h3><p>Modernized legacy applications by upgrading technology stacks, redesigning screens, and improving performance, usability, and maintainability.</p><div class="tag-list"><span>Modernization</span><span>UI Engineering</span><span>Performance</span><span>Migration</span></div></div>
+          </article>
+        </div>
+        <p class="confidential-note">Project descriptions are summarized at a high level and omit confidential implementation details.</p>
+      </div>
+    </section>
 
-		<title>Swati P</title>
-	</head>
-	<body>
-		<div class="main-grid">
-			<section class="about">
-				<span>
-					<h1 class="name">
-						Swati<br /><span class="font-normal">P</span>
-					</h1>
-					<span class="links">
-						<a id="email" href="mailto:recipient@example.com"
-							><img class="icon" src="./assets/mail.webp" alt="mail"
-						/></a>
-						<a
-							href="https://www.linkedin.com/in/swatijprakash" target="_blank"
-							><img class="icon" src="./assets/linkedin.webp" alt="linkedin"
-						/></a>
-					</span>
-				</span>
-				<h2 class="section-heading">About me</h2>
-				<p>
-					Full Stack Engineer with over 4 years of experience building innovative and scalable web applications. 
-					Skilled in Angular, React.js, and Node.js with a strong track record of delivering high-quality solutions in Agile environments. 
-					Proficient in both front-end and back-end development, with expertise in software architecture, performance optimization and cross-functional collaboration. 
-					Committed to aligning technical solutions with business goals to drive impactful results.
-				</p>
-			</section>
-			<section class="experience">
-				<h2 class="section-heading">Experience</h2>
-				<div class="items">
-					<span class="item">
-						<span
-							><h3>Full Stack Consultant</h3>
-							<p class="date">June 2023 - Present</p></span
-						>
-						<p class="subheading">
-							Deloitte
-						</p>
-						<ul>
-							<li>
-								<p>
-									Digitalized field applications for a prominent client, streamlining their processes 
-									through custom software solutions.
-								</p>
-							</li>
-							<li>
-								<p>
-									Developed and maintained a sophisticated web-based sales application tailored to meet 
-									the unique needs of clients. This application was built using a robust tech stack with 
-									a microservices architecture, utilizing Nest.JS for the backend and ReactJS for the 
-									frontend.
-								</p>
-							</li>
-							<li>
-								<p>
-									Developed REST APIs to enable seamless communication and 
-									data transfer within applications, ensuring optimal performance and user experience.
-								</p>
-							</li>
-						</ul>
-					</span>
-					<span class="item">
-						<span
-							><h3>Full Stack Engineer</h3>
-							<p class="date">January 2021 - May 2023</p></span
-						>
-						<p class="subheading">
-							Tata Consultancy Services (TCS)
-						</p>
-						<ul>
-							<li>
-								<p>
-									Collaborated with Global Leads and the COO for the end-to-end design and development
-									of an application that manages compliance across various business processes and
-									domains.
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-kicker">03 / TOOLKIT</p><h2>Technologies I work with</h2></div><p class="section-side-copy">A practical toolkit for building, integrating, and supporting applications.</p></div>
+        <div class="skills-grid">
+          <div class="skill-panel reveal"><div class="skill-icon">01</div><h3>Frontend</h3><p>Accessible, responsive, maintainable user experiences.</p><div class="skill-tags"><span>React.js</span><span>Angular</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></div>
+          <div class="skill-panel reveal"><div class="skill-icon">02</div><h3>Backend &amp; APIs</h3><p>Reliable services, integrations, and business logic.</p><div class="skill-tags"><span>Node.js</span><span>NestJS</span><span>REST APIs</span><span>Microservices</span></div></div>
+          <div class="skill-panel reveal"><div class="skill-icon">03</div><h3>Cloud &amp; Data</h3><p>Cloud platforms and data-backed application workflows.</p><div class="skill-tags"><span>SQL</span><span>BigQuery</span><span>AWS</span><span>GCP</span></div></div>
+          <div class="skill-panel reveal"><div class="skill-icon">04</div><h3>Tools &amp; Delivery</h3><p>Collaboration, version control, and delivery workflows.</p><div class="skill-tags"><span>Git</span><span>Jenkins</span><span>Postman</span><span>Debugging</span><span>Documentation</span></div></div>
+        </div>
+      </div>
+    </section>
 
-								</p>
-							</li>
-							<li>
-								<p>
-									Created and maintained technical documentation, including workflow diagrams,
-									checklists, user manuals, and design documents. Hosted demo sessions with clients to 
-									communicate project progress, gather feedback, and implement necessary amendments.
+    <section class="section credentials-section" id="education">
+      <div class="container credentials-grid">
+        <div class="reveal"><p class="section-kicker">04 / EDUCATION</p><h2>Learning that<br><span class="muted-heading">keeps moving.</span></h2>
+          <div class="credential-item"><div class="credential-symbol">MCA</div><div><h3>Master of Computer Applications</h3><p>APJ Abdul Kalam Technological University</p></div></div>
+          <div class="credential-item"><div class="credential-symbol">BCA</div><div><h3>Bachelor of Computer Applications</h3><p>Calicut University</p></div></div>
+        </div>
+        <div class="certificates reveal"><p class="section-kicker">05 / CERTIFICATIONS</p><h2>Learning highlights</h2>
+          <div class="certificate-item"><span class="certificate-icon">✳</span><div><h3>AI Generalist</h3><p>Skill Badge</p></div><span class="certificate-arrow">↗</span></div>
+          <div class="certificate-item"><span class="certificate-icon">⚛</span><div><h3>React JS</h3><p>Great Learning</p></div><span class="certificate-arrow">↗</span></div>
+          <div class="certificate-item"><span class="certificate-icon">A</span><div><h3>Angular Essential Training</h3><p>Professional training</p></div><span class="certificate-arrow">↗</span></div>
+          <p class="certificate-footnote">Add links to the original certificates or badges when available.</p>
+        </div>
+      </div>
+    </section>
 
-								</p>
-							</li>
-							<li>
-								<p>
-									Hosted demo sessions with clients to communicate project progress, gather feedback, 
-									and implement necessary amendments.
-
-								</p>
-							</li>
-							<li>
-								<p>
-									Led migration projects to upgrade older technologies to newer versions and updated 
-									user interface screens. Developed responsive user interfaces and implemented custom 
-									changes based on user requirements.
-								</p>
-							</li>
-						</ul>
-					</span>
-				</div>
-			</section>
-			<section class="technical">
-				<h2 class="section-heading">Technical Skills</h2>
-				<ul>
-					<li>
-						<h4>Web Technologies</h4>
-						<p>JavaScript | Typescript | React JS | Angular | Nest.js </p>
-					</li>
-					<li>
-						<h4>Other Technologies</h4>
-						<p>SQL | Git | Katalon | Jenkins | Postman</p>
-					</li>
-					<li>
-						<h4>Cloud Technologies</h4>
-						<p>AWS : S3 | EC2 </p>
-					</li>
-				</ul>
-			</section>
-			<section class="education">
-				<h2 class="section-heading">Education</h2>
-				<div class="items">
-					<span class="item">
-						<span
-							><h3>MASTER OF COMPUTER APPLICATIONS</h3>
-							<p class="date">2017-2020</p></span
-						>
-						<p class="subheading">APJ Abdul Kalam Technological University</p>
-						<p>
-							Completed Graduation from Vidya Academy of Science & Technology,
-							Thrissur with a CGPA of <b>8.9</b>.
-						</p>
-					</span>
-					<span class="item">
-						<span
-							><h3>BACHELOR OF COMPUTER APPLICATIONS</h3>
-							<p class="date">2014-2017</p></span
-						>
-						<p class="subheading">Calicut University</p>
-						<p>
-							Completed Graduation from Ansar Womens College, Thrissur
-							with a CGPA of <b>8.6</b>.
-						</p>
-					</span>
-				</div>
-			</section>
-			<section class="achievements">
-				<h2 class="section-heading">Achievements</h2>
-				<ul>
-					<li>
-						<p>
-							Acquired Applause Award from Deloitte for Commitment to Talent.
-						</p>
-					</li>
-					<li>
-						<p>
-							Acquired Client Centricity Award from Deloitte for the appreciations received from the 
-							client team.
-						</p>
-					</li>
-					<li>
-						<p>
-							Acquired Technical Excllence Award from TCS for managing development 
-							milestones from initial steps through final delivery
-						</p>
-					</li>
-					<li>
-						<p>
-							Acquired Learning Achievement Award from TCS for keeping 
-							continuous learning and clearing milestone challenges.
-						</p>
-					</li>
-					<li>
-						<p>
-							Completed AsCEnD Courses on Machine Learning and Data Analytics 
-					        	issued by TCS.
-						</p>
-					</li>
-					<li>
-						<p>
-							Acquired Micro Degree in Software Engineering Industrial Practice.
-						</p>
-					</li>
-				</ul>
-			</section>
-			<section class="hobbies">
-				<h2 class="section-heading">Hobbies</h2>
-				<div>
-					<span>
-						<i class="fa-solid fa-music"></i>
-						<p>Music</p>
-					</span>
-					<span>
-						<i class="fa-solid fa-book-open-reader icon"></i>
-						<p>Reading</p>
-					</span>
-					<span>
-						<i class="fa-solid fa-spa icon"></i>
-						<p>Yoga</p>
-					</span>
-				</div>
-			</section>
-		</div>
-
-		<script src="/scripts/email.js"></script>
-	</body>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box reveal">
+        <div><p class="section-kicker">06 / CONTACT</p><h2>Have a good challenge<br>in mind?</h2><p class="contact-copy">Let’s connect and talk about technology, collaboration, and building useful things.</p></div>
+        <div class="contact-details">
+          <a class="contact-link" href="mailto:swp@deloitte.com"><span class="contact-icon">✉</span><span><small>EMAIL</small>swp@deloitte.com</span><span class="contact-arrow">↗</span></a>
+          <a class="contact-link" href="tel:+919809107986"><span class="contact-icon">↗</span><span><small>PHONE</small>+91 9809107986</span><span class="contact-arrow">↗</span></a>
+          <button class="copy-email" id="copyEmail" type="button">Copy email address <span>⧉</span></button>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">S</span><span>Swati Prakash<span class="brand-dot">.</span></span></a><p>Designed with care · Built with HTML, CSS &amp; JavaScript</p><a href="#home" class="back-top">Back to top ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> Swati Prakash</span><span>Consultant · Full Stack Engineer</span></div></footer>
+</body>
 </html>
