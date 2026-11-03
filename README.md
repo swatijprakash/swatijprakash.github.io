@@ -6,6 +6,7 @@ A responsive single-page portfolio built with plain HTML, CSS, and JavaScript. N
 - `index.html` — portfolio content and page structure
 - `style.css` — layout, colors, responsive design, and animations
 - `script.js` — mobile navigation, reveal-on-scroll effects, footer year, and copy-email interaction
+- `assests/Resume` - PDF resume to be downloaded
 
 ## Preview locally
 Open `index.html` in a browser. For a local server, run `python -m http.server 8000` in this folder and open `http://localhost:8000`.
