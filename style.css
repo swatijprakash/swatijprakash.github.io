@@ -65,6 +65,8 @@ h2 { font-size: clamp(30px, 3.5vw, 43px); line-height: 1.2; margin: 14px 0 24px;
 .stat-row { display: flex; gap: 42px; padding-top: 23px; margin-top: 25px; border-top: 1px solid var(--line); }
 .stat-row div { display: flex; flex-direction: column; gap: 3px; }.stat-row strong { font: 800 20px "Manrope", sans-serif; color: var(--accent); }.stat-row span { font-size: 11px; color: var(--muted); }
 .experience-section { background: #f7f8fc; }
+.work-container { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+.project-container { width: min(1120px, calc(100% - 48px)); margin: 50px auto 0 auto; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin-bottom: 35px; }
 .section-heading h2 { margin-bottom: 0; }.section-side-copy { max-width: 260px; margin-bottom: 5px; color: var(--muted); font-size: 13px; }
 .experience-list { border-top: 1px solid #dfe3ed; }
