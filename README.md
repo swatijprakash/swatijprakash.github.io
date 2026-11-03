@@ -1,4 +1,4 @@
-# Swati Prakash — Portfolio Website
+# Swati P — Portfolio Website
 
 A responsive single-page portfolio built with plain HTML, CSS, and JavaScript. No build tools or frameworks required.
 
